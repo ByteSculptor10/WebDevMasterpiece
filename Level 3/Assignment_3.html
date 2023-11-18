@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <!-- Question 1 -->
+    <table border="black">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Question 2 -->
+    Name: <input type="text">
+    <div>
+        Sex: 
+        <input type="radio" name="M" id="Male"  value="M">
+        <Label for="Male">Male</Label>
+        <input type="radio" name="f" id="Female"  value="F">
+        <Label for="Female">Female</Label>
+    </div>
+    <label for="msg">Message: </label> 
+    <textarea id="msg" cols="100" rows="10"></textarea>
+    <div>
+        <input type="checkbox" name="Subscribe" id="Subscribe">
+        <label for="Subscribe">Subscribe?</label>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    <hr>
+
+    <!--  Question 3-->
+    <h2>Feedback Form</h2>
+    Name: <input type="text" placeholder="Write your name"> <br>
+    Email: <input type="text" placeholder="Write your email">
+    <div>
+        <label for="msg">Message</label>
+        <textarea name="message" id="msg" cols="100" rows="2">
+        </textarea>
+    </div>
+    <div>
+        <label for="Rate">Rate us our of 5</label> <br>
+        <input type="radio" name="btn" id="Rate"> 1 <br>
+        <input type="radio" name="btn" id="Rate"> 2 <br>
+        <input type="radio" name="btn" id="Rate"> 3 <br>
+        <input type="radio" name="btn" id="Rate"> 4 <br>
+        <input type="radio" name="btn" id="Rate"> 5 <br>
+    </div>
+    <div>
+        <button type="submit">
+            Send your message!
+        </button>
+    </div>
+</body>
+</html>

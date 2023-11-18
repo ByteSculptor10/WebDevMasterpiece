@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <form action="/action">
+        <!-- Frm elements -->
+        <h1>Form Elements</h1>
+        <div>
+            <b>Username: </b><input type="text" placeholder="Username"> <br>
+            <b>Password: </b><input type="password" placeholder="password"> <br>
+            <b>Phone: </b><input type="number" placeholder="Mobile number"> <br>
+            <b>Time: </b><input type="time"> <br>
+            <b>Color: </b><input type="color"> <br>
+            <b>Date: </b><input type="date"> <br>
+        </div>
+
+        <!-- Classical Approach for Label -->
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" placeholder="username" id="username">
+        </div>
+
+        <!-- Types of Button -->
+        <div>
+            <button type="submit">Submit</button>
+            <button type="button">Button</button>
+            <button type="reset">Reset</button>
+        </div>
+
+        <!-- Button using input -->
+        <div>
+            <input type="submit" value="Click Me">
+        </div>
+
+        <!-- Name Attribute -->
+        <div>
+            <b>UserName: </b><input type="text" name="username" id="username" placeholder="Your Username">
+        </div>
+        <div>
+            <b>PassWord: </b><input type="text" name="Password" id="Password" placeholder="Your Password">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Check Box -->
+    <form action="/server">
+        <div>
+            <input type="checkbox" name="age" id="age">
+            <label for="age">I am 18+</label>
+            <button>Submit</button>
+        </div>
+    </form>
+    <hr>
+
+    <!-- Radio Button -->
+    <form action="/action">
+        <input type="radio" name="fruit" id="Apple" value="apple">
+        <label for="Apple">Apple</label> <br>
+        <input type="radio" name="fruit" id="mango" value="apple">
+        <label for="mango">Mango</label> <br>
+        <input type="radio" name="fruit" id="Pineappple" value="apple">
+        <label for="Pineappple">Pineappple</label>
+        <br>
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <!-- Select --Input Element -->
+    <form action="/server">
+        <b>Choose profession: </b>
+        <select name="profession" id="profession">
+            <option selected>Select Profession</option>
+            <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <!-- Range  --Input Element -->
+    <form action="/server">
+        <label for="volume">Volume</label>
+        <input type="range" min="0" max="100" name="vol" id="volume">
+        <button>Submit</button>
+    </form>
+    <hr>
+
+    <!-- Text Area -->
+    <form action="/server">
+        <label for="feedback">Please provide Feedback: </label>
+        <textarea name="feed" id="feedback" cols="100" rows="10" placeholder="Write your feedback here"></textarea> <br>
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
